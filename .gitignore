@@ -1,0 +1,17 @@
+# RAD145 Study Center — local-only files (not published on GitHub Pages)
+/import.html
+/js/private-import.js
+/private/
+/slides/
+/uploads/
+/backups/
+RAD145-backup-*.json
+*.ppt
+*.pptx
+.DS_Store
+RAD145-corrections-*.json
+/.backups/
+/AGENTS.md
+/untitled folder/
+/*.md
+!/README.md

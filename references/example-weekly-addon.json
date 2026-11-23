@@ -1,0 +1,31 @@
+{
+  "format": "rad145-content-pack-v1",
+  "modules": [
+    {
+      "id": "electrostatics",
+      "title": "Electrostatics & Five Laws",
+      "source": "Example user-supplied extra slide (replace with actual slide reference)",
+      "items": [
+        {
+          "id": "weekly-l1-new-01",
+          "q": "Example: what is the unit of charge?",
+          "a": "Coulomb (C)",
+          "wrong": [
+            "Volt (V)",
+            "Ohm (Ω)",
+            "Watt (W)"
+          ],
+          "why": "Charge is measured in coulombs. Replace this example with your verified weekly slide content.",
+          "source": "Example only — not a sourced lecture fact"
+        }
+      ],
+      "lesson": [
+        {
+          "head": "New lecture note (sample)",
+          "text": "Replace this sample with concise, verified wording from the new slides.",
+          "source": "Example only"
+        }
+      ]
+    }
+  ]
+}
