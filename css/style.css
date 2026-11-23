@@ -14,3 +14,108 @@
 @media (max-width:620px){.visual-gallery{grid-template-columns:1fr}.subject-heading{margin-top:18px}}
 
 .chapter-heading{grid-column:1 / -1;margin:14px 0 0;font-size:1rem;font-weight:700;opacity:.86;}
+
+/* Study visuals: enlarge in a native dialog;
+   the gallery layout remains unchanged. */
+
+.study-visual-link {
+  display: block;
+  cursor: zoom-in;
+  border-radius: 6px;
+}
+
+.study-visual-link:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.study-visual-dialog {
+  width: min(1120px, calc(100vw - 24px));
+  max-width: none;
+  max-height: calc(100vh - 24px);
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 20px 75px rgba(0, 0, 0, .35);
+}
+
+.study-visual-dialog::backdrop {
+  background: rgba(9, 18, 28, .82);
+}
+
+.study-visual-modal-head,
+.study-visual-modal-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.study-visual-modal-head {
+  border-bottom: 1px solid var(--line);
+}
+
+.study-visual-modal-head strong {
+  font-size: .93rem;
+  line-height: 1.35;
+}
+
+.study-visual-modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background: #111;
+  max-height: calc(100vh - 170px);
+  max-height: calc(100dvh - 170px);
+}
+
+.study-visual-modal-body img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 170px);
+  max-height: calc(100dvh - 170px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.study-visual-modal-foot {
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+  font-size: .85rem;
+}
+
+.study-visual-modal-nav {
+  display: flex;
+  gap: 7px;
+}
+
+.study-visual-modal-nav button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+  .study-visual-modal-head,
+  .study-visual-modal-foot {
+    padding: 10px;
+  }
+
+  .study-visual-modal-head strong {
+    font-size: .83rem;
+  }
+
+  .study-visual-modal-foot {
+    gap: 9px;
+  }
+
+  .study-visual-modal-body,
+  .study-visual-modal-body img {
+    max-height: calc(100dvh - 190px);
+  }
+}

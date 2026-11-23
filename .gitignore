@@ -12,6 +12,7 @@ RAD145-backup-*.json
 RAD145-corrections-*.json
 /.backups/
 /AGENTS.md
+/docs/
 /untitled folder/
 /*.md
 !/README.md
