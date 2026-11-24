@@ -5,6 +5,8 @@
 /slides/
 /uploads/
 /backups/
+# Local development staging
+/import/
 RAD145-backup-*.json
 *.ppt
 *.pptx
